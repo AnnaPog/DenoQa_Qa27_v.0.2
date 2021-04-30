@@ -1,27 +1,34 @@
+import models.User;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class FormTest extends TestBase{
     @BeforeMethod
     public void preconditions(){
-        wd.findElement(By.xpath("//h5[.='Forms']")).click();
-        wd.findElement(By.xpath("//span[.='Practice Form']")).click();
+        app.user().openRegistrationForm();
     }
 
     @Test
     public void formTest(){
-       // wd.findElement(By.xpath("//input[@id='firstName']"));
-       // wd.findElement(By.cssSelector("#firstName"));
+        app.user().fillRegistrationForm(new User()
+        .withFirstName("Michel")
+        .withLastName("Forbs")
+                        .withMobile("8908058678")
 
-        typeByLocator(By.id("firstName"), "Lola");
-        typeByLocator(By.id("lastName"), "Now");
+                .withSubjects("Selenium")
+                //.withCurrentAddress("Tel Aviv")
+//                .withState("NCR")
+//                .withCity("Gurgaon")
+        );
 
+        app.user().clickGenderMenu();
+        app.user().clickHobbiesMenu();
+        app.user().attachPhoto("/Users/annapogrebinskaya/Documents/GitHub/DenoQa_Qa27_v.0.2/graficheskij-portret-karandashom-na-zakaz-2.jpg");
+        app.user().clickSubmitButton();
+
+        Assert.assertTrue(app.user().isUserAdded());
     }
 
-    public void typeByLocator(By locator, String text) {
-        wd.findElement(locator).click();
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-    }
 }
