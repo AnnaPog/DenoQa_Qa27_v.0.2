@@ -11,6 +11,11 @@ public class User {
     String state;
     String city;
 
+    String gender;
+    String hobbies;
+
+
+
     public User withFirstName(String firstName) {
         this.firstName = firstName;
         return this;
@@ -90,5 +95,23 @@ public class User {
 
     public String getCity() {
         return city;
+    }
+
+    public User withGender(String gender) {
+        this.gender = gender;
+        return this;
+    }
+
+    public User withHobbies(String hobbies) {
+        this.hobbies = hobbies;
+        return this;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getHobbies() {
+        return hobbies;
     }
 }
