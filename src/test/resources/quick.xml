@@ -2,16 +2,10 @@
 
 <suite name="Suite1" verbose="1" >
     <test name="Reg" >
-        <groups>
-            <run>
-                <include name="my"/>
-            </run>
-        </groups>
+
 
         <classes>
-            <class name="SmokeTest" />
             <class name="QuckTest" />
-            <class name="FormTest" />
         </classes>
     </test>
 

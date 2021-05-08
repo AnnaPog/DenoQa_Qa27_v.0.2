@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class QuckTest extends TestBase{
 
-    @Test
+    @Test(groups = {"my", "pay"})
     public void quckTest(){
 
     }
