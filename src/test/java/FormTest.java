@@ -21,18 +21,20 @@ public class FormTest extends TestBase{
                 .withEmail("MichelFor@gmail.com")
                 .withGender("Male")
                         .withMobile("8908058678")
-                .withDateOfBirth("04 May 1986")
-                //.withSubjects("English")
+                .withDateOfBirth("26 April 1990")
+                .withSubjects("English")
                 .withHobbies("Sports")
                 .withCurrentAddress("Tel Aviv")
-//                .withState("NCR")
-//                .withCity("Gurgaon")
+                .withCity("Gurgaon")
+                .withState("NCR")
+                .withCity("Gurgaon")
         );
 
         app.user().attachPhoto("/Users/annapogrebinskaya/Documents/GitHub/DenoQa_Qa27_v.0.2/graficheskij-portret-karandashom-na-zakaz-2.jpg");
         app.user().clickSubmitButton();
 
         Assert.assertTrue(app.user().isUserAdded());
+        app.user().closeDialog();
     }
 
 }
