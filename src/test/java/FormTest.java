@@ -21,7 +21,7 @@ public class FormTest extends TestBase{
                 .withEmail("MichelFor@gmail.com")
                 .withGender("Male")
                         .withMobile("8908058678")
-                .withDateOfBirth("26 April 1990")
+                .withDateOfBirth("30 April 1990")
                 .withSubjects("English")
                 .withHobbies("Sports")
                 .withCurrentAddress("Tel Aviv")
@@ -35,6 +35,7 @@ public class FormTest extends TestBase{
 
         Assert.assertTrue(app.user().isUserAdded());
         app.user().closeDialog();
+        logger.info("Car was created");
     }
 
 }

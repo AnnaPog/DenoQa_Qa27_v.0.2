@@ -1,0 +1,3 @@
+29910 [Test worker] INFO  - Start method -->quckTest
+29958 [Test worker] INFO  - Passed quick
+29980 [Test worker] INFO  - End of method -->quckTest

@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    WebDriver wd;
+    EventFiringWebDriver wd;
+   // WebDriver wd;
     HelperFormStudent user;
     String browser;
 
@@ -24,10 +26,12 @@ public class ApplicationManager {
     public void init(){
        // wd = new ChromeDriver();
         if(browser.equals(BrowserType.CHROME)){
-            wd = new ChromeDriver();
+            wd = new EventFiringWebDriver(new ChromeDriver());
         }else if(browser.equals(BrowserType.FIREFOX)){
-            wd = new FirefoxDriver();
+            wd = new EventFiringWebDriver(new FirefoxDriver());
         }
+        wd.register(new MyListener());
+
         wd.navigate().to("https://demoqa.com/");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

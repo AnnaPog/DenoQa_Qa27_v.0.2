@@ -4,6 +4,8 @@ import org.openqa.selenium.*;
 import models.User;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.List;
+
 public class HelperFormStudent extends HelperBase{
     public HelperFormStudent(WebDriver wd) {
         super(wd);
@@ -135,6 +137,25 @@ public class HelperFormStudent extends HelperBase{
         }else {
         click(By.xpath("//div[@class='react-datepicker__day react-datepicker__day--0"+ newDay +"']"));
         }
+    }
+
+    private void selectBDay6(String bday){
+        String [] data = bday.split(" ");
+        click(By.xpath("//input[@id='dateOfBirthInput']"));
+        select(By.xpath("//select[@class='react-datepicker__month-select']"), data[1]);
+
+        select(By.xpath("//select[@class='react-datepicker__year-select']"), data[2]);
+        int day = Integer.parseInt(data[0]);
+
+
+        List<WebElement> list = wd.findElements(By.xpath(String.format("//div[.='%s']",data[0])));
+        WebElement element;
+        if(list.size()>1 && day>15){
+            element = list.get(1);
+        }else {
+            element = list.get(0);
+        }
+        element.click();
     }
 
 //    private void selectDay() {

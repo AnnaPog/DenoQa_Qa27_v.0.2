@@ -1,0 +1,52 @@
+13:48:31 32091 [Test worker] INFO  - Start navigate to --> https://demoqa.com/
+13:49:01 62277 [Test worker] INFO  - Start method -->formTest
+13:49:01 62280 [Test worker] INFO  - Start search element --> By.xpath: //h5[.='Forms']
+13:49:01 62311 [Test worker] INFO  - Found --> By.xpath: //h5[.='Forms']
+13:49:01 62516 [Test worker] INFO  - Start search element --> By.xpath: //span[.='Practice Form']
+13:49:01 62540 [Test worker] INFO  - Found --> By.xpath: //span[.='Practice Form']
+13:49:02 63080 [Test worker] INFO  - Start search element --> By.id: firstName
+13:49:02 63111 [Test worker] INFO  - Found --> By.id: firstName
+13:49:02 63752 [Test worker] INFO  - Start search element --> By.id: lastName
+13:49:02 63774 [Test worker] INFO  - Found --> By.id: lastName
+13:49:02 63927 [Test worker] INFO  - Start search element --> By.id: userEmail
+13:49:02 63952 [Test worker] INFO  - Found --> By.id: userEmail
+13:49:03 64241 [Test worker] INFO  - Start search element --> By.xpath: //label[@for='gender-radio-1']
+13:49:03 64282 [Test worker] INFO  - Found --> By.xpath: //label[@for='gender-radio-1']
+13:49:03 64415 [Test worker] INFO  - Start search element --> By.id: userNumber
+13:49:03 64462 [Test worker] INFO  - Found --> By.id: userNumber
+13:49:03 64764 [Test worker] INFO  - Start search element --> By.xpath: //input[@id='dateOfBirthInput']
+13:49:03 64781 [Test worker] INFO  - Found --> By.xpath: //input[@id='dateOfBirthInput']
+13:49:04 65052 [Test worker] INFO  - Start search element --> By.xpath: //input[@id='dateOfBirthInput']
+13:49:04 65124 [Test worker] INFO  - Found --> By.xpath: //input[@id='dateOfBirthInput']
+13:49:04 65215 [Test worker] INFO  - Start search element --> By.xpath: //select[@class='react-datepicker__month-select']
+13:49:04 65232 [Test worker] INFO  - Found --> By.xpath: //select[@class='react-datepicker__month-select']
+13:49:11 72004 [Test worker] INFO  - Start search element --> By.xpath: .//option[normalize-space(.) = "April"]
+13:49:11 72053 [Test worker] INFO  - Found --> By.xpath: .//option[normalize-space(.) = "April"]
+13:49:11 72166 [Test worker] INFO  - Start search element --> By.xpath: //select[@class='react-datepicker__year-select']
+13:49:11 72195 [Test worker] INFO  - Found --> By.xpath: //select[@class='react-datepicker__year-select']
+13:49:11 72223 [Test worker] INFO  - Start search element --> By.xpath: .//option[normalize-space(.) = "1990"]
+13:49:11 72255 [Test worker] INFO  - Found --> By.xpath: .//option[normalize-space(.) = "1990"]
+13:49:11 72366 [Test worker] INFO  - Start search element --> By.xpath: //div[.=30]
+13:49:11 72394 [Test worker] INFO  - Found --> By.xpath: //div[.=30]
+13:49:11 72514 [Test worker] INFO  - Start search element --> By.id: subjectsInput
+13:49:11 72539 [Test worker] INFO  - Found --> By.id: subjectsInput
+13:49:20 81272 [Test worker] INFO  - Start search element --> By.id: subjectsInput
+13:49:20 81304 [Test worker] INFO  - Found --> By.id: subjectsInput
+13:49:20 81371 [Test worker] INFO  - Start search element --> By.xpath: //label[@for='hobbies-checkbox-1']
+13:49:20 81394 [Test worker] INFO  - Found --> By.xpath: //label[@for='hobbies-checkbox-1']
+13:49:23 84372 [Test worker] INFO  - Start search element --> By.id: currentAddress
+13:49:23 84410 [Test worker] INFO  - Found --> By.id: currentAddress
+13:49:23 84617 [Test worker] INFO  - Start search element --> By.id: react-select-3-input
+13:49:23 84644 [Test worker] INFO  - Found --> By.id: react-select-3-input
+13:49:29 90004 [Test worker] INFO  - Start search element --> By.id: react-select-4-input
+13:49:29 90040 [Test worker] INFO  - Found --> By.id: react-select-4-input
+13:49:29 90430 [Test worker] INFO  - Start search element --> By.id: uploadPicture
+13:49:29 90452 [Test worker] INFO  - Found --> By.id: uploadPicture
+13:50:08 129520 [Test worker] INFO  - Start search element --> By.xpath: //button[.='Submit']
+13:50:14 135675 [Test worker] INFO  - Found --> By.xpath: //button[.='Submit']
+13:50:16 137339 [Test worker] INFO  - Start search element --> By.id: example-modal-sizes-title-lg
+13:50:16 137372 [Test worker] INFO  - Found --> By.id: example-modal-sizes-title-lg
+13:50:18 139453 [Test worker] INFO  - Start search element --> By.id: closeLargeModal
+13:50:19 140237 [Test worker] INFO  - Found --> By.id: closeLargeModal
+13:50:20 141740 [Test worker] INFO  - Car was created
+13:50:20 141769 [Test worker] INFO  - End of method -->formTest
